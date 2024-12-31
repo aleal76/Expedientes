@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+{% extends 'layout.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeExptes</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="{% static 'js\main.js' %}" defer></script>
+ <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/main.js' %}" defer></script>
+{% block title %}
 
-</head>
-<body>
-    <h1>Home Expeientes</h1>
+    Home 
+
+{% endblock %}
+
+{% block content %}
+    <h1>Home Expedientes</h1>
     <p>Verifica mi ppagina <a href="/about">About </a> page.</p>
-   
-</body>
-</html>
+{% endblock %}
+
+
+

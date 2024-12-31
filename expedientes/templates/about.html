@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About AA</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="{% static 'js/main.js' %}" defer></script>
+{% extends 'layout.html' %}
 
-</head>
-<body>
+{% block title %}
+
+    About
+
+{% endblock %}
+
+{% block content %}
     <h1>About AA</h1>
     <p>Verifica mi pagina <a href="/">HomeExpts </a> page.</p>
-</body>
-</html>
+{% endblock %}
+
+
+
+
+
