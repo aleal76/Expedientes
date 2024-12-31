@@ -1,11 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Expedientes</title>
-</head>
-<body>
-    <h1>Lista de Expedientes en proceso</h1>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+
+Lista de Expedientes
+
+{% endblock %}
+
+{% block content %}
+<section>
+    <h1>Expedientes</h1>
+
+    {% for expediente in expedientes %}
+    <article class="expte">
+        <h2>
+            <a href="{% url 'exptes:page' slug=expediente.slug %}">
+                {{expediente.caratula}}
+            </a>
+        </h2>
+
+        <p>{{expediente.descripcion}} </p>
+        <p>{{expediente.fecha}} </p>
+    </article>
+    {% endfor %}
+
+
+</section>
+
+
+
+<h1>LIsta de Expedientes AA </h1>
+{% endblock %}

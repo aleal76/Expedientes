@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block title %}
+    {{expediente.caratula}}
+{% endblock %}
+
+{% block content %}
+<section>
+    <h1> {{expediente.caratula}}</h1>
+    <p>{{expediente.descripcion}} </p>
+    <p>{{expediente.fecha}} </p>
+</section>
+
+<h3>LIsta de Expedientes AA </h3>
+{% endblock %}
